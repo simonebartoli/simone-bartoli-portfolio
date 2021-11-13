@@ -1,0 +1,594 @@
+/*HOMEPAGE STYLING BEGIN*/
+#home{
+    display: flex;
+    background-attachment: fixed;
+    background-image: url(../images/headerImage.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home>h1{
+    padding-bottom: 0.5em;
+    width: 100vw;
+    line-height: 2em;
+
+    color:#e3e3de;
+    text-shadow: 0px 0px 10px #0070d1;
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 0.05em;
+    /*letter-spacing: 0.15em;*/
+    font-weight:bold;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /*font-family: 'Bebas Neue', cursive;*/
+}
+/*HOMEPAGE STYLING END*/
+
+
+/*DEFAULT RULES FOR INDEX PAGE BEGIN*/
+#about-myself, #skills, #qualification, #project, #experience, #contact{    
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.flex-wrap{
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+}
+p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+h2{
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.box1, .box2{
+    flex: 50%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.box01, .box02{
+    position: relative;
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.white{
+    background: transparent;
+    color: black;
+}
+.dark{
+    background-image: linear-gradient(#1B2326, #39474d);
+    background-attachment: fixed;
+    color: whitesmoke;
+}
+/*DEFAULT RULES FOR INDEX PAGE END*/
+
+
+
+/*ABOUT MYSELF ONLY SECTION BEGIN*/
+#about-myself img{
+    height: 70vh;
+}
+
+#about-myself h2{
+    padding-bottom: 1em;
+    padding-left: 0;
+}
+#about-myself .box2{
+    margin-top: 0;
+    padding: 2em;
+    align-items: flex-start;
+}
+/*ABOUT MYSELF ONLY SECTION END*/
+
+
+
+/*SKILLS SECTION ONLY BEGIN*/
+#skills .box1{
+    flex: 40%;
+}
+#skills .box2{
+    padding: 1.5em;
+    list-style: none;
+    flex: 60%;
+    align-items: flex-start;
+}
+#skills .box2 li{
+    width: 90%;
+    margin: 1.5em;
+}
+#skills .box2 li h3{
+    margin-bottom: 0.5em;
+}
+#skills .box2 .bar{
+    background-color: #353b48;
+    display: block;
+    height: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #0a59a8;
+}
+#skills .box2 .bar span{
+    height: 2px;
+    background: #0080ff;
+    float: left;
+}
+#skills .box2 #html{
+    width: 100%;
+}
+#skills .box2 #java{
+    width: 100%;
+}
+#skills .box2 #php{
+    width: 100%;
+}
+#skills .box2 #javascript{
+    width: 80%;
+}
+#skills .box2 #python{
+    width: 50%;
+}
+/*SKILLS SECTION ONLY END*/
+
+
+
+/*DEGREE/QUALIFICATION SECTION ONLY BEGIN*/
+#qualification{
+    margin: 1em;
+}
+
+#qualification .flex-wrap{
+    margin: 1em;
+    padding: 1em;
+    color: whitesmoke;
+    width: 100%;
+    border: 2pt solid black;
+    border-radius: 5px;
+}
+#qualification .box1, #qualification .box2{
+    position: relative;
+    text-align: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+
+#qualification .box1 h2, #qualification .box2 h2{
+    max-lines: 1;
+    max-height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    font-size: 2em;
+    border-top: 1pt solid whitesmoke;
+    border-bottom: 1pt solid whitesmoke;
+}
+.year{
+    position: absolute;
+    font-size: 1.5em;
+    top: 40%;
+}
+.description{
+    font-weight: 600;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: none;
+    position: absolute;
+    width: 90%;
+    top: 60%;
+}
+
+#qualification .box01::before, #qualification .box02::before{
+    content: "";
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    filter: grayscale(100%) brightness(0.6);
+}
+#qualification .box01:hover::before, #qualification .box02:hover::before{
+    filter:none;
+    filter: brightness(0.75) saturate(0.8);
+}
+
+#qualification .box01:hover > .description, #qualification .box02:hover > .description{
+    display: block;
+    animation: fadeIn 1s;
+}
+
+#qualification .box1 .box01::before{
+    background-image: url(../images/Garibaldi.jpg);
+}
+#qualification .box1 .box02::before{
+    background-image: url(../images/DaVinci.jpeg);
+}
+#qualification .box2 .box01::before{
+    background-image: url(../images/hotelLondon.jpg);
+}
+#qualification .box2 .box02::before{
+    background-image: url(../images/qmul.jpg);
+}
+#qualification{
+    margin-top: 0;
+}
+/*DEGREE/QUALIFICATION SECTION ONLY END*/
+
+
+
+/*PROJECTS SECTION ONLY BEGIN*/
+#project .flex-wrap{
+    padding: 1em;
+    flex-direction: column;
+}
+hr{
+    margin: 2.5%;
+    width: 95%;
+}
+#project .box1, #project .box2{
+    flex-direction: row;
+}
+#project .box1>div, #project .box2>div{
+    text-align: justify;
+    flex-basis: 50%;
+}
+#project .box1>div{
+    margin-right: 3em;
+}
+#project .box2>div{
+    margin-left: 3em;
+}
+
+#project h3{
+    text-align: center;
+    font-size: 2.25em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+#project img{
+    border: 2pt solid whitesmoke;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+/*PROJECTS SECTION ONLY END*/
+
+
+/*WORKING EXPERIENCE SECTION ONLY BEGIN*/
+#experience .container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: auto 2em;
+}
+#experience>div{
+    position: relative;
+    margin: 3em;
+}
+.container.r1{
+    justify-content: flex-start;
+}
+.container.r2{
+    justify-content: flex-end;
+}
+.container i.fa-square{
+    font-size: 3em;
+    position: absolute;
+    top: 40%;
+    color: black;
+    z-index: -1;
+
+}
+.r1 i.fa-square{
+    left: 100%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.r2 i.fa-square{
+    right: 100%;
+    transform: translateX(50%) rotate(45deg);
+}
+
+.container i.fa-file-contract{
+    font-size: 4em;
+    background-color: whitesmoke;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+i.fa-angle-down{
+    position: absolute;
+    font-size: 4em;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0080ff;
+    
+}
+
+#experience .item{
+    background-color: #001663;
+    position: relative;
+    box-sizing: border-box;
+    color: whitesmoke;
+    padding: 2em;
+    padding-top: 0;
+    border: 5pt solid black;
+    border-radius: 1em;
+    margin: 2em 0;
+    width: 40%;
+}
+#experience h3{
+    text-align: center;
+    font-size: 2.25em;
+    padding: 0.5em;
+}
+#line{
+    position: absolute;
+    border: 2pt solid black;
+    border-radius: 10px;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 5px;
+    transform: translateX(-50%);
+    background-color: #0080ff;
+}
+/*WORKING EXPERIENCE SECTION ONLY END*/
+
+
+
+
+/*CONTACT SECTION ONLY BEGIN*/
+
+/*MODULE ON THE LEFT BEGIN*/
+#contact .box1{
+    align-items: flex-start;
+    padding: 0;
+    flex: 40%;
+}
+#contact p{
+    flex:100%;
+    padding: 1.5em;
+}
+#contact .link-container p{
+    padding: 0;
+    margin: auto;
+    margin-left: 0.5em;
+}
+#contact a{
+    padding: 0.5em 1em 0.5em 1em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#contact p a:hover{
+    text-decoration: underline;
+}
+.link-container{
+    display: grid;
+    align-content: center;
+    padding: 5%;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+}
+.flex-wrap i{
+    font-size: 2.5em;
+    margin: 1em;
+    margin-right: 0;
+}
+/*MODULE ON THE LEFT END*/
+
+/*MODULE ON THE RIGHT BEGIN*/
+form{
+    margin: 0 0.5em;
+}
+#contact fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.container-wrap{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+}
+.container-wrap .row{
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#name{
+    margin-right: auto;
+    width: 85%;
+}
+#surname{
+    margin-left: auto;
+    width: 85%;
+}
+
+input, #conct_submit, textarea{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+#contact input, #conct_submit{
+    min-width: 0px;
+}
+form label{
+    font-size: 1.5em;
+}
+
+input, textarea{
+    color: whitesmoke;
+    text-align: center;
+    border: 2px solid whitesmoke;
+}
+input:hover, textarea:hover, #conct_submit:hover{
+    box-shadow: 0 0 10px whitesmoke;
+}
+#conct_submit:hover{
+    color: black;
+    background-color: whitesmoke;
+    border: 3px solid black;
+}
+#conct_submit{
+    margin-top: 1em;
+}
+#conct_submit{
+    color: whitesmoke;
+    text-align: center;
+    border: 2px solid whitesmoke;
+}
+.accepted{
+    text-align: center;
+    font-size: 2em;
+}
+/*MODULE ON THE RIGHT END*/
+
+/*CONTACT SECTION ONLY END*/
+
+.warning{
+    margin: auto;
+    padding: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+/*ANIMATION RULES BEGIN*/
+.fade-in{
+    display: block;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*ANIMATION RULES END*/
+
+  
+
+
+/*MOBILE VIEW DESIGN*/
+@media only screen and (max-width: 760px) {
+    /*GENERAL RULES BEGIN*/
+    #about-myself, #skills, #experience, #contact{
+        flex-direction: column;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .box1, .box2{
+        flex-wrap: wrap;
+        flex: 100%;
+    }
+    .box01, .box02{
+        flex-wrap: wrap;
+        flex:50%;
+        min-width: 250px;
+    }
+    /*GENERAL RULES END*/
+
+    /*ABOUT MYSELF RULES BEGIN*/
+    #about-myself .box1, #project img{
+        order: 1;
+    }
+    #about-myself .box2, #project .box2>div{
+        order: 0;
+    }
+    #about-myself h2{
+        width: 100%;
+        text-align: center;
+    }
+    /*ABOUT MYSELF RULES END*/
+
+
+    /*PROJECTS RULES BEGIN*/
+    #project .flex-wrap{
+        flex-wrap: wrap;
+    }
+    #project .box1, #project .box2{
+        flex-wrap: wrap;
+        flex: 100%;
+    }
+    #project .box1>div, #project .box2>div, #project img{
+        flex-basis: 100%;
+        margin: 0;
+    }
+    #project .box2>div{
+        order: 0;
+    }
+    #project img{
+        order: 1;
+        max-width: 100%;
+        margin: 1em 0 1em 0;
+    }
+    /*PROJECTS RULES END*/
+
+    /*WORKING EXPERIENCE RULES BEGIN*/
+    #experience .container{
+        justify-content: flex-end;
+        position: static;
+    }
+    #experience>div{
+        margin: 3em 1em;
+    }
+    .item{
+        flex-basis: 75%;
+    }
+    .r1 i.fa-square{
+        left: 0;
+    }
+    #line, i.fa-angle-down, .container i.fa-file-contract{
+        left: 10%;
+    }
+    /*WORKING EXPERIENCE RULES END*/
+
+    /*CONTACT RULES BEGIN*/
+    #contact .link-container{
+        width: 100%;
+        align-self: center;
+        padding: 0;
+    }
+
+    #name, #surname{
+        width: unset;
+        margin: 0.5em 0;
+    }
+    /*CONTACT RULES END*/
+
+
+}

@@ -1,0 +1,245 @@
+/*GENERAL RULES BEGIN*/
+body{
+    color: whitesmoke;
+    width: 100%;
+    background-color: #1B2326;
+}
+
+/*GENERAL RULES END*/
+
+
+/*POST STYLING RULES START*/
+hr{
+    min-height: 1px;
+    border: none;
+    border-bottom: 1pt solid white;
+}
+
+.show-post{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+label{
+    display: block;
+}
+.post{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-color: #394245;
+    border: 1pt solid white;
+    padding: 2em;
+    padding-top: 1em;
+    margin: 1.25em 0;
+    font-size: 1.5em;
+}
+.info{
+    width: 80%;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+    border-left: 2pt solid whitesmoke;
+    width: 20%;
+}
+.perinf{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.date{
+    font-size: 0.75em;
+    margin-bottom: 1em;
+}
+.title-post{
+    word-break: break-all;
+    font-weight: bolder;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+.message-post{
+    word-break: break-all;
+    font-size: 0.90em;
+    line-height: 1.5em;
+}
+.action button{
+    padding: 1em;
+    margin-top: 2em;
+}
+#delete-post{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+/*POST STYLING RULES END*/
+
+
+/*REPLY SECTION START*/
+.contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.replies{
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+    background-color: #626e73;
+    border: 1pt solid white;
+    padding: 2em;
+    padding-top: 1em;
+    margin: 0.5em 0;
+    font-size: 1.5em;
+}
+.replies .info{
+    width: 100%;
+}
+.replies .action{
+    align-items: flex-end;
+    width: 100%;
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+.replies button{
+    margin-top: 0.5em;
+    width: 20%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.replies .action hr{
+    margin: unset;
+    margin: 1em 0;
+    border-bottom: 1pt solid whitesmoke;
+}
+.replies hr{
+    width: 100%;
+    border-bottom: 1pt solid whitesmoke;
+}
+
+/*FORM STYLING START*/
+form{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+fieldset{
+    width: 50%;
+    background-color: #343A40;
+    padding: 3em;
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+.submit{
+    padding: 1em; 
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.row input{
+    width: 40%;
+}
+
+#cancel{
+    width:70%;
+}
+.row input, .submit button{
+    padding: 1em;
+    margin: 1em;
+}
+input, textarea, button{
+    border: 2pt solid gray;
+    width: 100%;
+    border-radius: 0.5em;
+}
+input:hover, textarea:hover, button:hover{
+    box-shadow: 0 0 10px white;
+}
+textarea{
+    padding: 1em;
+    font-size: 1em;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1pt solid whitesmoke;
+    resize: none;
+}
+
+.verification{
+    margin: 1em;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    background-color: #ffcc00;
+    border: 3pt solid red;
+    color: black;
+    font-weight: bolder;
+}
+.verification:hover{
+    cursor: pointer;
+}
+
+.royal{
+    box-shadow: 0 0 10px #FFD700;
+    background-color: #807034;
+}
+.invisible{
+    display: none;
+}
+/*MOBILE PHONE/TABLET STYLING RULES*/
+@media only screen and (max-width: 760px) {
+    fieldset{
+        width: 100%;
+    }
+    .post{
+        flex-direction: column;
+    }
+
+    .action{
+        padding: 0;
+        width: 100%;
+        border: none;
+        margin: 0;
+        border-top: 1pt solid whitesmoke;
+        padding-top: 1em;
+        margin-top: 1.5em;
+    }
+    .action p{
+        width: 100%;
+        text-align: left;
+    }
+    .info{
+        width: 100%;
+    }
+    .replies{
+        width: 80%;
+        box-sizing: border-box;
+    }
+    .replies .action button{
+        width: 70%;
+    }
+}

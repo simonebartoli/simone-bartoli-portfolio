@@ -1,0 +1,12 @@
+html, body, section, article, aside, p, h1, h2, h3, form, input, textarea
+header, footer, div, nav, ul, li, a, figure, img, label{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+}
+body, html{
+    max-width: 100%;
+    overflow-x: hidden;
+}

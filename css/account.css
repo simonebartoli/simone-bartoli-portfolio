@@ -1,0 +1,287 @@
+body{
+    background-color: #1B2326;
+    width: 100%;
+}
+#account{
+    color: whitesmoke;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+#account h1{
+    text-align: left;
+    font-size: 3em;
+}
+#account hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1pt solid whitesmoke;
+}
+
+.spacer{
+    min-height: 1px;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+.box1, .box2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.box1{
+    flex-grow: 4;
+}
+.box2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-grow: 5;
+}
+.spacer{
+    flex-grow: 1;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #394245;
+    padding: 2em;
+    margin: 1.5em 0;
+    border: 1pt solid white;
+}
+#account h2{
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+#account ul{
+    font-size: 1.5em;
+    margin: 2em auto 0 auto;
+    list-style-type: none;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#account .content li{
+    margin: auto 0;
+    padding: 5px;
+}
+.flex-wrap .content span{
+    margin: auto 0;
+    padding: 5px;
+    border: 1pt solid white;
+}
+
+
+
+form fieldset{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+}
+form input{
+    color: whitesmoke;
+    flex-grow: 1;
+    padding: 1em;
+    background-color: transparent;
+    border: 1pt solid whitesmoke;
+    margin: 0.5em;
+}
+form input[type="submit"]{
+    border: 1.5pt solid whitesmoke;
+    background-color: #1B2326;
+}
+
+
+
+#canc_acc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#canc_acc p{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+#canc_acc form {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+#canc_acc input{
+    width: 40%;
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+}
+
+.success{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#account .errors{
+    margin: 0;
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: red;
+    border: 2pt solid white;
+}
+
+
+/*POST PUBLISHED START*/
+.published{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #626e73;
+    border: 2pt solid whitesmoke;
+    padding: 1em;
+    margin: 0.75em 0;
+}
+.published:hover{
+    box-shadow: 0 0 10px whitesmoke;
+}
+.title-post{
+    font-size: 2em;
+}
+.number{
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+button{
+    box-sizing: border-box;
+    background-color: #1B2326;
+    color: whitesmoke;
+    padding: 1.5em;
+    margin: 0 1em;
+    border: 1pt solid whitesmoke
+}
+button:hover{
+    box-shadow: 0 0 10px whitesmoke;
+}
+.show-action{
+    margin: 0.5em 0;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.empty{
+    box-sizing: border-box;
+    padding: 2em;
+    background: repeating-linear-gradient(
+    45deg,
+    #394245,
+    #394245 20px,
+    #1B2326 20px,
+    #1B2326 40px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #939b9e;
+    border: 1pt solid whitesmoke;
+}
+.empty label{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#account .box2 h2{
+    height: 10%;
+}
+.changeheigth{
+    min-height: 85%;
+}
+
+.admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    font-size: 15pt;
+    min-height: 10vh;
+    background-color: #394245;
+    border: 1pt solid white;
+}
+#account .admin h2{
+    margin: 0;
+}
+
+#account .verification{
+    margin: 0.5em 0;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    background-color: #ffcc00;
+    border: 3pt solid red;
+    color: black;
+}
+#account .verification.yes{
+    background-color: #5cb85c;
+    border: 2pt solid whitesmoke;
+}
+#account .verification p{
+    font-weight: bolder;
+}
+.verification:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 760px) {
+    .spacer{
+        display: none;
+    }
+    .flex-wrap, .content{
+        flex-wrap: wrap;
+    }
+
+    #canc_acc form{
+        width: 100%;
+    }
+    .box2.content{
+        flex-wrap: nowrap;
+    }
+    .box2{
+        min-height: 90vh;
+    }
+    #account ul{
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    button{
+        padding: 1em;
+    }
+
+}
+

@@ -1,0 +1,77 @@
+body{
+    background-color: #1B2326;
+    width: 100%;
+}
+body>div{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    text-align: center;
+    margin: 2em;
+    width: 50%;
+    background-color: #394245;
+    border: 1pt solid white;
+
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2{
+    font-size: 4em;
+    padding: 0.5em;
+}
+.content p{
+    padding: 1em;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+form{
+    padding: 1em;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+}
+form input{
+    min-width: none;
+    color: whitesmoke;
+    flex-grow: 1;
+    padding: 1em;
+    background-color: transparent;
+    border: 1pt solid whitesmoke;
+    margin: 0.5em;
+}
+form input[type="submit"]{
+    border: 1.5pt solid whitesmoke;
+    background-color: #1B2326;
+}
+
+
+
+.content .error{
+    color: red;
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.content .success{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+@media only screen and (max-width: 760px) {
+    .content{
+        width: 100%;
+    }
+}

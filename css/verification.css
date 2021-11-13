@@ -1,0 +1,203 @@
+.content{
+    min-height: 75vh;
+    padding: 2em;
+    background-color: #1B2326;
+    color: whitesmoke;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.intro{
+    color: black;
+    background-color: #ffcc00;
+
+    margin: auto;
+    width: 70%;
+    padding: 1em;
+    border: 3pt solid #cc3300;
+}
+.intro p, .intro ul{
+    font-size: 1.25em;
+    list-style-position: inside;
+    margin: auto;
+    width: 70%;
+}
+.intro p, .intro li{
+    padding: 0.5em;
+    font-weight: bolder;
+}
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.phoneverify, .paypalverify{
+    width: 95%;
+    box-sizing: border-box;
+    padding: 2em;
+    margin: 2em auto;
+    background-color: #394245;
+    border: 1pt solid white;
+    border-radius: 1em;
+}
+.phoneverify h2:hover, .paypalverify h2:hover{
+    cursor:pointer;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.phoneverify p{
+    font-size: 1.25em;
+    padding: 0.5em 0;
+}
+.row{
+    background-color: #1B2326;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1.5em;
+    border: 2pt solid white;
+}
+.number{
+    width: 60%;
+    padding: 2em;
+    margin: auto;
+}
+input{
+    box-sizing: border-box;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: 1pt solid white;
+    background-color: #394245;
+    color: whitesmoke;
+    width: 74%;
+}
+select{
+    box-sizing: border-box;
+
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: 1pt solid white;
+    background-color: #394245;
+    color: whitesmoke;
+    width: 25%;
+}
+button{
+    margin-top: 1em;
+    font-size: 1.5em;
+    border: 1pt solid white;
+    background-color: #394245;
+    color: whitesmoke;
+    min-height: 50px;
+    width: 100%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: 3px solid black;
+    box-shadow: 0 0 10px whitesmoke;
+}
+input:hover, select:hover{
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+
+
+
+#step2 .important{
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bolder;
+    font-size: 2em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    border: 2pt solid red;
+    text-align: center;
+}
+.important span{
+    word-break: break-all;
+    display: block;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+}
+#step2{
+    width: 100%;
+}
+#goback{
+    box-sizing: border-box;
+    width: 34.25%;
+}
+#sendmessage{
+    box-sizing: border-box;
+    width: 65%;
+}
+
+#step3 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#step3 input, #step3 button{
+    margin: 1em auto;
+    width: 48%;
+    height: 60px;
+}
+
+.number .ban{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.paypalverify{
+    background: repeating-linear-gradient(
+        45deg,
+        #394245,
+        #394245 20px,
+        #1B2326 20px,
+        #1B2326 40px
+    );
+}
+
+@media only screen and (max-width: 760px) {
+    .content{
+        padding: 1em;
+    }
+    .intro{
+        box-sizing: border-box;
+        width: 95%;
+    }
+    .phoneverify{
+        padding: 2em 0.5em;
+    }
+    .number{
+        padding: 0;
+        margin-top: 2em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    select, input{
+        width: 100%;
+    }
+    select{
+        margin-bottom: 1em;
+    }
+    .important span{
+        font-size: 1.25em;
+    }
+    #goback, #sendmessage{
+        width: 100%;
+    }
+    #step3 div{
+        flex-wrap: wrap;
+    }
+    #step3 div button, #step3 div input{
+        width: 100%;
+    }
+    .intro p, .intro ul{
+        width: 90%;
+    }
+}

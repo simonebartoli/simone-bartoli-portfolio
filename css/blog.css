@@ -1,0 +1,339 @@
+/*GENERAL RULES BEGIN*/
+body{
+    color: whitesmoke;
+    width: 100%;
+    background-color: #1B2326;
+}
+.add-post{
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*GENERAL RULES END*/
+
+
+/*ADD BUTTON STYLING RULES BEGIN*/
+.add-post.first{
+    min-height: 60vh;
+    width: 100%;
+}
+.add-toggle.first{
+    box-sizing: border-box;
+    padding: 1em;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    line-height: 1.5em;
+}
+.add-toggle.first button{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: transparent;
+    border-radius: 1em;
+    padding: 0.5em;
+    border: 1pt solid whitesmoke;
+    color: whitesmoke;
+
+    width: 80%;
+    font-size: 1.5em;
+    margin: 1em;
+}
+.add-toggle.first button:hover{
+    background-color: snow;
+    color: black;
+    box-shadow: 0 0 10px blue;
+}
+/*ADD BUTTON STYLING RULES END*/
+
+
+
+/*FORM STYLING RULES BEGIN*/
+.post-form.first{  
+    width: 40%;
+    margin-bottom: 1.5em;
+}
+fieldset{
+    background-color: #343A40;
+    padding: 5%;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.row input{
+    flex-basis: 40%;
+}
+
+#cancel{
+    width:70%;
+}
+.row input, .submit button{
+    padding: 2%;
+    margin: 2%;
+}
+input, textarea, button{
+    margin-bottom: 3%;
+    border: 2pt solid gray;
+    width: 100%;
+    border-radius: 0.5em;
+}
+input:hover, textarea:hover, button:hover, #filter:hover{
+    box-shadow: 0 0 10px white;
+}
+input[type="text"]{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+input[type="text"], textarea{
+    padding: 2%;
+    font-size: 1em;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 1pt solid whitesmoke;
+    resize: none;
+}
+
+/*FORM STYLING RULES END*/
+
+
+/*POST STYLING RULES START*/
+hr{
+    border: none;
+    border-bottom: 1pt solid white;
+}
+
+#welcome{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 2rem;
+}
+.show-post{
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+label{
+    display: block;
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #394245;
+    border: 1pt solid white;
+    padding: 1.25em 2em;
+    margin: 1.0em 0;
+    font-size: 1.5em;
+}
+.post:hover{
+    box-shadow: 0 0 15px whitesmoke;
+    cursor: pointer;
+}
+.post label:hover, .post p:hover{
+    cursor: pointer;
+}
+
+.first{
+    width: 25%;
+}
+.perinf{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.date{
+    font-size: 0.75em;
+    word-break: break-all;
+}
+.title-post{
+    width: 65%;
+    margin: 0em 1em;
+    word-break: break-all;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.post p{
+    width: 15%;
+}
+.post i{
+    text-align: center;
+    font-size: 1.5em;
+    width: 5%;
+}
+.message-post{
+    word-break: break-all;
+    font-size: 0.90em;
+    line-height: 1.5em;
+}
+/*POST STYLING RULES END*/
+
+.add-post.more{
+    justify-content: flex-start;
+    font-size: 1.5em;
+    margin: 2rem;
+}
+.add-toggle.more{
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+.add-toggle.more p{
+    width: 25%;
+}
+.add-toggle.more button{
+    width: 25%;
+    margin: auto 0;
+    height: 4em;
+}
+.post-form.more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.25;
+}
+
+#filter-form{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#filter-form label{
+    margin-right: 1em;
+}
+#filter{
+    width: 50%;
+    padding: 0 0.5em;
+    height: 4em;
+    border: 1pt solid whitesmoke;
+    border: 2pt solid gray;
+    border-radius: 0.5em;
+}
+#filter option{
+    font-size: 1.5em;
+}
+
+.royal{
+    box-shadow: 0 0 10px #FFD700;
+    background-color: #807034;
+}
+
+
+.verification{
+    margin: 1em;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+    background-color: #ffcc00;
+    border: 3pt solid red;
+    color: black;
+    font-weight: bolder;
+}
+.verification:hover{
+    cursor: pointer;
+}
+
+
+
+.mobile-only{
+    display: none;
+}
+.first-post-form.visible, .post-form.visible{
+    display: none;
+}
+
+/*MOBILE PHONE/TABLET STYLING RULES*/
+@media only screen and (max-width: 760px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .row input{
+        flex-basis: 70%;
+    }
+    .post-form{
+        width: 100%;
+    }
+    .add-post.more{
+        justify-content: center;
+    }
+    .add-toggle.more{
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .add-toggle.more p{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    .add-toggle.more button{
+        width: 100%;
+        margin-bottom: 2.5em;
+    }
+    .post{
+        flex-direction: column;
+    }
+    .post .first, .post .title-post, .post p, .post hr{
+        width: 100%;
+        margin: 0;
+    }
+    .post hr{
+        display: block;
+        min-height: 1px;
+        margin: 1em 0;
+        border-bottom: 1pt solid whitesmoke;
+    }
+    .post .title-post{
+        margin-bottom: 1em;
+    }
+
+    #filter-form{
+        width: 100%;
+    }
+    #filter-form label{
+        text-align: center;
+        width: 40%;
+        margin: 0;
+    }
+    #filter-form #filter{
+        width: 60%;
+    }
+
+    .post-form.first{
+        width: 80%;
+    }
+    .add-toggle.first{
+        width: 100%;
+    }
+    .no-mobile{
+        display: none;
+    }
+}

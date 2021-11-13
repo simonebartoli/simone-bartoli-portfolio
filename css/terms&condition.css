@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    background-color: #1B2326;
+}
+.intro, .info, .user-agreement, .administrator-agreement, .hash{
+    width: 75%;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #394245;
+    border: 1pt solid whitesmoke;
+    color: whitesmoke;
+}
+.user-agreement, .administrator-agreement{
+    box-shadow: 0 0 10px white;
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 0.5em;
+}
+h2{
+    padding: 0.5em;
+    font-size: 2em;
+}
+h3{
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+p{
+    padding: 0.5em 0;
+    text-align: justify;
+}
+hr{
+    border: none;
+    border-bottom: 1pt solid whitesmoke;
+    width: 75%;
+    padding: 0 1em;
+}
+
+
+ul:not(nav ul, .nav-resp ul){
+    padding: 1em 2em;
+}
+li:not(nav li, .nav-resp li){
+    padding: 0.25em;
+}
+.sublist{
+    padding: 0.5em 2em;
+}
+
+@media only screen and (max-width: 760px) {
+    .intro, .info, .user-agreement, .administrator-agreement, .hash{
+        font-size: 1.25em;
+        box-sizing: border-box;
+        padding: 1em 2em;
+        width: 90%;
+    }
+    h2{
+        padding: 1em;
+        text-align: center;
+    }
+    hr{
+        width: 90%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,44 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #343A40;
+    width: 100%;
+}
+footer .flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: #9A9D9A;
+    font-weight: bold;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size: 1.3em;
+    padding: 1em 0.5em 1em 0.5em;
+    text-align: center;
+}
+footer span{
+    color: white;
+    font-weight: 600;
+}
+footer .small{
+    font-style: italic;
+    padding-top: 0;
+    font-size: 0.75em;
+}
+
+@media only screen and (max-width: 449px) {
+    footer p{
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+    footer .small{
+        padding: 1em 0.5em 1em 0.5em;
+    }
+    .no-mobile{
+        display: none;
+    }
+}
